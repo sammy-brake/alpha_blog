@@ -1,0 +1,111 @@
+<style>.container {
+  background-color: white;
+  margin: 30px;
+background: linear-gradient(90deg, pink, yellow, aqua, pink);
+  font-family: raleway;
+  
+}
+
+header {
+  text-align: center;
+  
+}
+
+p {
+  text-align: center;
+}
+.left {
+  b
+  font-size: 18px;
+}
+
+.right {
+  
+  justify-self: right;
+ text-align: center;
+}
+
+form {
+  background-color: white;
+display: grid;
+  grid-template-columns: 200px 250px;
+  grid-template-rows: repeat(8, auto);
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+  margin: auto;
+  font-family: raleway, sans-serif;
+  
+  
+
+}
+
+#submit {
+  grid-column: 1/3;
+  padding: 10px;
+  background-color: aqua;
+   
+}
+
+.middle {
+  align: center;
+  display: flex;
+ 
+}
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+<div class="container">
+<header>
+  <h1 id="title">This is my first THING</></h1>
+</header>
+  
+  <main>
+    <p id="description"> This is my first survey! </p>
+    <div class="middle">
+    <form id="survey-form">
+      <label class="right" id="name-label">Name:</label> 
+      <input type="name" class="left" id="name" placeholder="Enter your name here" required> 
+    
+      <label class="right" id="email-label">Email:</label>
+      <input class="left" type="email" id="email" placeholder="Enter email here" required>
+      
+      <label class="right" id="number-label">Favorite number between 0 and 9:</label>
+      <input class="left" type="number" id="number" min="0" max="9" placeholder="#" required>
+      <label class="right" id="dropdown-label">Where would you rather be? (select one).</label>
+      <select class="left" id="dropdown" size=4> 
+        <option value="beach"> beach</option>
+        <option value="mountain"> mountain</option>
+        <option value="both">both</option>
+        <option value="neither">neither</option></select>
+        <label class="right" id="radio-label">Which type of organism are you?</label>
+      <div class="left"
+       <label for="animal">
+         <input id="invertebrate" type="radio" value="invertebrate" name="animal-type">Invertebrate</input><br>
+        <input id="fish" value="fish"type="radio" name="animal-type">Fish</input><br>
+      <input id="amphibian" type="radio" value="amphibian" name="animal-type">Amphibian</input><br>
+    <input id="reptile" value="reptile" type="radio" name="animal-type">Reptile</input><br>
+  <input id="bird" value="bird" type="radio" name="animal-type">Bird</input><br>
+<input id="mammal"  value="mammal" type="radio" name="animal-type">Mammal</input><br>
+
+        </label>
+</div>
+      <label class="right" id="checkbox-label">Are you a transformer?</label>
+<div class="left">
+<input type="checkbox" value="yes"> Yes </input>
+<input type="checkbox" value="no"> No </input></label></div>
+<label class="right" id="thoughts">Do you have anything else to comment?</label>
+<textarea class="left" rows="4" cols="50" placeholder="Enter your thoughts here!">
+</textarea>
+  </input>
+<button type="submit" id="submit">Click to Submit</button>
+    </form>
+</div>
+<footer>
+</footer>
+  </main>
+</div>

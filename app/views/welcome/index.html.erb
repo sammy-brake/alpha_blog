@@ -1,111 +1,165 @@
-<style>.container {
-  background-color: white;
-  margin: 30px;
-background: linear-gradient(90deg, pink, yellow, aqua, pink);
-  font-family: raleway;
+
+<style>#header-img {
+  width: 100px;
   
 }
-
-header {
-  text-align: center;
+ 
+#header {
+  display: flex;
   
+  margin-left: 10px;
 }
 
-p {
-  text-align: center;
+nav {
+  display: flex;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: aliceblue;
+  z-index: 500;
 }
-.left {
-  b
-  font-size: 18px;
+
+
+
+
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  margin-left: 20px;
+  font-size: 40px;
+  color: gray;
+  align-self: center;
+}
+#orgy {
+  padding: 70px;
+  font-size: 40px;
+}
+#expl {
+  font-size: 20px;
+}
+
+#joel {
+  font-size: 20px;
+}
+
+#hai {
+  font-size: 20px;
+}
+
+#sammy {
+  font-size: 20px;
+}
+
+a {
+  align-self: center;
+  justify-self: flex-end;
+  margin-left: 150px;
+  font-size: 50px;
+  font-family: 'Fredericka the Great', cursive;
+ color: black;
 }
 
 .right {
-  
-  justify-self: right;
- text-align: center;
-}
-
-form {
-  background-color: white;
-display: grid;
-  grid-template-columns: 200px 250px;
-  grid-template-rows: repeat(8, auto);
-  grid-column-gap: 25px;
-  grid-row-gap: 30px;
-  margin: auto;
-  font-family: raleway, sans-serif;
-  
-  
-
-}
-
-#submit {
-  grid-column: 1/3;
-  padding: 10px;
-  background-color: aqua;
-   
-}
-
-.middle {
-  align: center;
   display: flex;
  
 }
-</style>
 
-
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-
-<div class="container">
-<header>
-  <h1 id="title">This is my first THING</></h1>
-</header>
+.nav-link {
+  display: flex;
   
-  <main>
-    <p id="description"> This is my first survey! </p>
-    <div class="middle">
-    <form id="survey-form">
-      <label class="right" id="name-label">Name:</label> 
-      <input type="name" class="left" id="name" placeholder="Enter your name here" required> 
-    
-      <label class="right" id="email-label">Email:</label>
-      <input class="left" type="email" id="email" placeholder="Enter email here" required>
-      
-      <label class="right" id="number-label">Favorite number between 0 and 9:</label>
-      <input class="left" type="number" id="number" min="0" max="9" placeholder="#" required>
-      <label class="right" id="dropdown-label">Where would you rather be? (select one).</label>
-      <select class="left" id="dropdown" size=4> 
-        <option value="beach"> beach</option>
-        <option value="mountain"> mountain</option>
-        <option value="both">both</option>
-        <option value="neither">neither</option></select>
-        <label class="right" id="radio-label">Which type of organism are you?</label>
-      <div class="left"
-       <label for="animal">
-         <input id="invertebrate" type="radio" value="invertebrate" name="animal-type">Invertebrate</input><br>
-        <input id="fish" value="fish"type="radio" name="animal-type">Fish</input><br>
-      <input id="amphibian" type="radio" value="amphibian" name="animal-type">Amphibian</input><br>
-    <input id="reptile" value="reptile" type="radio" name="animal-type">Reptile</input><br>
-  <input id="bird" value="bird" type="radio" name="animal-type">Bird</input><br>
-<input id="mammal"  value="mammal" type="radio" name="animal-type">Mammal</input><br>
+}
 
-        </label>
+h2 {
+ padding: 50px;
+ font-family: 'Fredericka the Great', cursive;
+}
+
+
+#founders {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 250px 200px;
+  grid-column-gap: 150px;
+  margin: 20px;
+}
+
+#founders-img {
+  height: 250px;
+  width: 175px;
+}
+
+
+
+#video {
+  position: relative;
+  left: 400px;
+}
+
+ @media (max-height: 800px) {
+    p{
+      font-size: 10px;
+    }
+
+   footer {
+     padding: 50px;
+       background-color: aliceblue;
+   }</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+
+<header id="header">
+  <nav id="nav-bar">
+  <img src="https://www.displayfakefoods.com/store/pc/catalog/2712_2064_general.jpg" id="header-img" alt="onion ring logo">
+    <h1> ORGY </h1>
+   <div class="right">
+    <a href="#video" class="nav-link"> Demo </a>
+   <a href="#contact" class="nav-link"> Contact </a>
+   <a href="#founders" class="nav-link"> Founders </a>
+    </div>
+  </nav>
+
+</header>
+
+<main>
+  <hr>
+  <h2 align="center" id="orgy"> Onion Ring Group for Yonc </h2>
+<hr>
+  <br>
+<div>
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AEn-m3R0R5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     </div>
+<hr>
+
+  <h2 align="center"> Founders </h2>
+<div id="founders">
+  <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t35.18174-12/23030816_10208368116398951_746911531_o.jpg?_nc_cat=0&oh=fbe33384e13de41fb8ac37cc00f44b78&oe=5B4918C9" id="founders-img">
+
+  <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/31958736_10155373160166716_3059775490974810112_n.jpg?_nc_cat=0&oh=286a4ab11fad34588b93aabe59f5d3d5&oe=5BA34616" id="founders-img"> 
+  
+  <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/36965820_10105077379268211_3640069540244619264_o.jpg?_nc_cat=0&oh=f5f551be0fb44f35a26f1fd9382c6432&oe=5BD9C911" id="founders-img">
+  
+  <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/36914208_10105077388734241_4476838897329897472_o.jpg?_nc_cat=0&oh=b6d9a52885b26ea1bee64d894790e02e&oe=5BE0234B" id="founders-img"> 
+    <p id="expl"> Christina </p>
+  <p id="joel"> Joel </p>
+  <p id="sammy"> Samantha </p>
+  <p id="hai"> Hai </p>
+  
 </div>
-      <label class="right" id="checkbox-label">Are you a transformer?</label>
-<div class="left">
-<input type="checkbox" value="yes"> Yes </input>
-<input type="checkbox" value="no"> No </input></label></div>
-<label class="right" id="thoughts">Do you have anything else to comment?</label>
-<textarea class="left" rows="4" cols="50" placeholder="Enter your thoughts here!">
-</textarea>
-  </input>
-<button type="submit" id="submit">Click to Submit</button>
+  <hr>
+  <div id="contact">
+  <form action="/www.freecodecamp.com/email-submit" id="form" align="center">
+    <h3 align="center">Input your email here for up-to-date info on upcoming events! </h3>
+    <input type="email" id="email" placeholder="Email" name="email">
+    <input type="submit" id="submit"></input>
     </form>
+  <br>
+  <br>
 </div>
+  
+</main>
+
 <footer>
 </footer>
-  </main>
-</div>
