@@ -74,18 +74,30 @@ h2 {
 
 
 #founders {
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 250px 200px;
-  grid-column-gap: 150px;
-  margin: 20px;
+  /*display: grid;*/
+  /*grid-template-columns: 200px 200px 200px 200px;*/
+  /*grid-template-rows: 250px 200px;*/
+  /*grid-column-gap: 150px;*/
+  /*margin: 20px;*/
+  max-width: 1335px;
+  margin: 0 auto;
 }
 
-#founders-img {
-  height: 250px;
-  width: 175px;
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
+.grid-item {
+  height: 550px;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 
 #video {
@@ -132,19 +144,34 @@ h2 {
 
   <h2 align="center"> Founders </h2>
 <div id="founders">
-  <img id="founders-img" <%= image_tag "yonc_xtina.jpg", size: "80x30"  %> >
-
-  <img id="founders-img" <%= image_tag "yonc_joel.jpg", size: "80x30"   %> >
-  
-  <img id="founders-img" <%= image_tag "yonc_sammy.jpg", size: "80x30"   %> >
-  
-  <img id="founders-img" <%= image_tag "yonc_hai.jpg", size: "80x30"  %> >
- 
+  <div class="grid-row">
+    <div class="grid-item">
+  <%= image_tag "yonc_xtina.jpg", size: "80x30"  %> 
+  </div>
+   <div class="grid-item">
+     <%= image_tag "yonc_joel.jpg", size: "80x30"   %> 
+  </div>
+  <div class="grid-item">
+   <%= image_tag "yonc_sammy.jpg", size: "80x30"   %> 
+  </div>
+  <div class="grid-item">
+   <%= image_tag "yonc_hai.jpg", size: "80x30"  %> 
+ </div>
+ </div>
+ <div class="grid-row">
+ <div class="grid-item">
   <p id="expl"> Christina </p>
+  </div>
+  <div class="grid-item">
   <p id="joel"> Joel </p>
+  </div>
+  <div class="grid-item">
   <p id="sammy"> Samantha </p>
+  </div>
+  <div class="grid-item">
   <p id="hai"> Hai </p>
-  
+  </div>
+  </div>
 </div>
   <hr>
   <div id="contact">
